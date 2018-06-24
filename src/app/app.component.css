@@ -57,4 +57,14 @@
   background: #00ff00;
 }
 
+.accordion .card-header:after {
+  font-family: 'FontAwesome';
+  content: "-";
+  float: right;
+}
+.accordion .card-header.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "+";
+}
+
 
