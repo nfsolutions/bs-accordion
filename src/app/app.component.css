@@ -1,12 +1,30 @@
-.header-div {
+.card-header {
   background-color: white;
+  font-size: 40px;
 }
 
-.header-div:hover {
+.card-header:hover {
   background-color: #f4f3f1;
 }
+
+.card-header[aria-expanded="true"] {
+  background-color: #F4F3F1;
+}
+
+.card-header[data-toggle="collapse"]:before {
+  background-color: orange;
+}
+
 .header-left {
   text-align: right;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-body {
+  background-color: #F4F3F1;
 }
 
 .center {
@@ -15,21 +33,15 @@
   /*text-align: center;*/
 }
 
-[data-toggle="collapse"] .fa:before {
-  content: "-";
-  font-size: 60px;
-  font-weight: lighter;
+[data-toggle="collapse"]:before {
   color: black;
   background-color: transparent;
 }
 
-[data-toggle="collapse"].collapsed .fa:before {
-  content: "+";
-  font-size: 60px;
-  font-weight: lighter;
+[data-toggle="collapse"].collapsed:before {
   color: black;
-  background-color: transparent;
-  padding-left: 50px;
+  background-color: #F4F3F1;
+  /*padding-left: 50px;*/
 }
 
 .btn-link {
@@ -63,8 +75,8 @@
   float: right;
 }
 .accordion .card-header.collapsed:after {
-  /* symbol for "collapsed" panels */
   content: "+";
 }
+
 
 
